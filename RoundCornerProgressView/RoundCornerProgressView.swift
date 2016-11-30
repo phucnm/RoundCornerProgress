@@ -25,7 +25,7 @@ public class RoundCornerProgressView: UIView {
     
     private var trackView = UIView(frame: .zero)
     
-    @IBInspectable public var trackTintColor = UIColor.lightGray {
+    @IBInspectable public var trackTintColor: UIColor = UIColor.lightGray {
         didSet {
             trackView.backgroundColor = trackTintColor
         }
@@ -33,7 +33,7 @@ public class RoundCornerProgressView: UIView {
     
     private var progressView = UIView(frame: .zero)
     
-    @IBInspectable public var progressTintColor = UIColor.red {
+    @IBInspectable public var progressTintColor: UIColor = UIColor.red {
         didSet {
             progressView.backgroundColor = progressTintColor
         }
@@ -46,8 +46,13 @@ public class RoundCornerProgressView: UIView {
             } else if progress > 1 {
                 progress = 1
             }
-            progressView.frame = CGRect(origin: progressView.frame.origin, size: CGSize(width: frame.width * progress, height: frame.height))
-            progressView.roundCorner(roundingCorners: progressRoundCorners, cornerRadius: CGSize(width: frame.size.height / 2, height: frame.size.height / 2))
+            DispatchQueue.main.async {
+                UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseIn, animations: {
+                    self.progressView.frame = CGRect(origin: self.progressView.frame.origin, size: CGSize(width: self.frame.width * self.progress, height: self.frame.height))
+                    self.progressView.roundCorner(roundingCorners: self.progressRoundCorners, cornerRadius: CGSize(width: self.frame.size.height / 2, height: self.frame.size.height / 2))
+                }, completion: nil)
+            }
+            
         }
     }
     
