@@ -46,13 +46,8 @@ public class RoundCornerProgressView: UIView {
             } else if progress > 1 {
                 progress = 1
             }
-            DispatchQueue.main.async {
-                UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseIn, animations: {
-                    self.progressView.frame = CGRect(origin: self.progressView.frame.origin, size: CGSize(width: self.frame.width * self.progress, height: self.frame.height))
-                    self.progressView.roundCorner(roundingCorners: self.progressRoundCorners, cornerRadius: CGSize(width: self.frame.size.height / 2, height: self.frame.size.height / 2))
-                }, completion: nil)
-            }
-            
+            self.progressView.frame = CGRect(origin: self.progressView.frame.origin, size: CGSize(width: self.frame.width * self.progress, height: self.frame.height))
+            self.progressView.roundCorner(roundingCorners: self.progressRoundCorners, cornerRadius: CGSize(width: self.frame.size.height / 2, height: self.frame.size.height / 2))
         }
     }
     
