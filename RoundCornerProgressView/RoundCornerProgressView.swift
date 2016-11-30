@@ -8,16 +8,16 @@
 import UIKit
 
 @IBDesignable
-class RoundCornerProgressView: UIView {
+public class RoundCornerProgressView: UIView {
     
-    @IBInspectable var trackRoundCorners: UIRectCorner = [.topRight, .bottomRight, .topLeft, .bottomLeft] {
+    @IBInspectable public var trackRoundCorners: UIRectCorner = [.topRight, .bottomRight, .topLeft, .bottomLeft] {
         didSet {
             trackView.roundCorner(roundingCorners: trackRoundCorners, cornerRadius: CGSize(width: frame.size.height / 2, height: frame.size.height / 2))
             
         }
     }
     
-    @IBInspectable var progressRoundCorners: UIRectCorner = [] {
+    @IBInspectable public var progressRoundCorners: UIRectCorner = [] {
         didSet {
             progressView.roundCorner(roundingCorners: progressRoundCorners, cornerRadius: CGSize(width: frame.size.height / 2, height: frame.size.height / 2))
         }
@@ -25,7 +25,7 @@ class RoundCornerProgressView: UIView {
     
     private var trackView = UIView(frame: .zero)
     
-    @IBInspectable var trackTintColor = UIColor.lightGray {
+    @IBInspectable public var trackTintColor = UIColor.lightGray {
         didSet {
             trackView.backgroundColor = trackTintColor
         }
@@ -33,13 +33,13 @@ class RoundCornerProgressView: UIView {
     
     private var progressView = UIView(frame: .zero)
     
-    @IBInspectable var progressTintColor = UIColor.red {
+    @IBInspectable public var progressTintColor = UIColor.red {
         didSet {
             progressView.backgroundColor = progressTintColor
         }
     }
     
-    @IBInspectable var progress: CGFloat = 0.3 {
+    @IBInspectable public var progress: CGFloat = 0.3 {
         didSet {
             if progress < 0 {
                 progress = 0
@@ -55,11 +55,11 @@ class RoundCornerProgressView: UIView {
         super.init(frame: frame)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         clipsToBounds = true
         setupSubviews()
@@ -80,7 +80,7 @@ class RoundCornerProgressView: UIView {
     }
 }
 
-extension UIView {
+fileprivate extension UIView {
     func roundCorner(roundingCorners: UIRectCorner, cornerRadius: CGSize) {
         let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: roundingCorners, cornerRadii: cornerRadius)
         let maskLayer = CAShapeLayer()
