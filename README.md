@@ -13,14 +13,14 @@
   * Import custom control by `import RoundCornerProgress`
   * Declare your property `var progressView: RoundCornerProgressView!`
   * Initialize your progress view and customize it
-  ```
-    self.progressView = RoundCornerProgressView(frame: CGRect(x: 20, y: 20, width: 200, height: 20))
-    self.progressView.trackTintColor = UIColor.blue
-    self.progressView.progressTintColor = UIColor.cyan
-    self.progressView.trackRoundCorners = [.topRight, .bottomLeft]
-    self.progressView.progressRoundCorners = [.bottomRight]
-    view.addSubview(self.progressView)
-  ```
+    ```swift
+      self.progressView = RoundCornerProgressView(frame: CGRect(x: 20, y: 20, width: 200, height: 20))
+      self.progressView.trackTintColor = UIColor.blue
+      self.progressView.progressTintColor = UIColor.cyan
+      self.progressView.trackRoundCorners = [.topRight, .bottomLeft]
+      self.progressView.progressRoundCorners = [.bottomRight]
+      view.addSubview(self.progressView)
+    ```
   <img src="Manually.png"/>
 
 ## Authors
