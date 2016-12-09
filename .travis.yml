@@ -9,6 +9,8 @@ env:
 before_install:
 - brew update
 - brew outdated carthage || brew upgrade carthage
+script:
+- xcodebuild xcodebuild -scheme RoundCornerProgressView -project RoundCornerProgressView.xcodeproj build
 before_script:
 - carthage bootstrap
 before_deploy:
