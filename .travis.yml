@@ -4,4 +4,4 @@ xcode_project: RoundCornerProgressView.xcodeproj
 xcode_scheme: RoundCornerProgressView
 xcode_sdk: iphonesimulator10.0
 script:
-- xcodebuild xcodebuild -scheme RoundCornerProgressView -project RoundCornerProgressView.xcodeproj build
+- xcodebuild -scheme RoundCornerProgressView -project RoundCornerProgressView.xcodeproj build
