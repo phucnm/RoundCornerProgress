@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "RoundCornerProgress"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A progress control you can change round radius of any border"
   s.description  = <<-DESC
   "Drop in and easy to customize progress view. 
