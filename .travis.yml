@@ -2,7 +2,7 @@ language: objective-c
 osx_image: xcode8
 xcode_project: RoundCornerProgressView.xcodeproj
 xcode_scheme: RoundCornerProgressView
-xcode_sdk: iphonesimulator10.1
+xcode_sdk: iphonesimulator10.0
 env:
   global:
   - FRAMEWORK_NAME=RoundCornerProgress
