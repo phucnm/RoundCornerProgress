@@ -3,25 +3,5 @@ osx_image: xcode8
 xcode_project: RoundCornerProgressView.xcodeproj
 xcode_scheme: RoundCornerProgressView
 xcode_sdk: iphonesimulator10.0
-env:
-  global:
-  - FRAMEWORK_NAME=RoundCornerProgressView
-before_install:
-- brew update
-- brew outdated carthage || brew upgrade carthage
 script:
 - xcodebuild xcodebuild -scheme RoundCornerProgressView -project RoundCornerProgressView.xcodeproj build
-before_script:
-- carthage bootstrap
-before_deploy:
-- carthage build --no-skip-current
-- carthage archive $FRAMEWORK_NAME
-deploy:
-  provider: releases
-  api_key:
-    secure: y6edueoY0We/KLWNI6L4Cwk31rI+rekhlU6giOukNzfXRusuWSlbpSmfJMloDBvrHR4YkBBhuzHmW7KA4JRJDudiszbTLMs4jEAqWFPfgq+HPGxymtayIZosQ5LRWElCPQPmXjNYSYOXmjIrAU7SAx0671DORK+Wtku993L3ygJ29TmTRtUrbf7szwEL/Lj12QaeC7M1qKiYJsmMAgqmT57zHBWT6H25SCoGE0dpAm1M99IULmBjX/blWM7rWw3KQkrBfD8yd2H/ZopGsjmTqv0P8Dm3kYfBYrqviidJiglFV4lFXIp/I9taA9sYjMqYqh/QquemSvCAfCxxbNMW4XmrXXjZggDq6etZDQuRW9kBRegN9TDNREB2wZHAM/3FHM+EvtuDQGwI5GfZokzVxFHlFP0yxD4sqKXm4ygjaJjzJdw0cTWl3bSeiH+slPWZl2sX9FmlmghjffHzuQTkGsDG3L5TnBGse5Gpzj/2VS9F6sdwU2WrLKdIk7EyTKXPU5+5MujrEpHrxxe9wNqN41hH54Tn7ui4b+rWpggORSmaJB99BUEFBbDkEMNAmw2edLSS2GNIhFT7dJP/nACi9SZE7oyyna3XnVIM4g8IKar1qcVkY13Qm1mB7jalDfH8Qe0JojjEJk2OvaPtjnRsUpPuNm5nHrPPMR2+qJH2w0Q=
-  file: RoundCornerProgressView.framework.zip
-  skip_cleanup: true
-  on:
-  repo: phucnm/RoundCornerProgress
-  tags: true
