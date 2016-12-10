@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		02E2A6801D66C5C0006A3B9B /* RoundCornerProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E2A67F1D66C5C0006A3B9B /* RoundCornerProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02E2A68A1D66F625006A3B9B /* RoundCornerProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E2A6891D66F625006A3B9B /* RoundCornerProgressView.swift */; };
+		CBF0EA741DFC1D6400BBEF85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF0EA731DFC1D6400BBEF85 /* AppDelegate.swift */; };
+		CBF0EA761DFC1D6400BBEF85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF0EA751DFC1D6400BBEF85 /* ViewController.swift */; };
+		CBF0EA791DFC1D6400BBEF85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF0EA771DFC1D6400BBEF85 /* Main.storyboard */; };
+		CBF0EA7B1DFC1D6400BBEF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF0EA7A1DFC1D6400BBEF85 /* Assets.xcassets */; };
+		CBF0EA7E1DFC1D6400BBEF85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF0EA7C1DFC1D6400BBEF85 /* LaunchScreen.storyboard */; };
+		CBF0EA831DFC1FE700BBEF85 /* RoundCornerProgressView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E2A67C1D66C5C0006A3B9B /* RoundCornerProgressView.framework */; };
+		CBF0EA851DFC251A00BBEF85 /* UIView+RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF0EA841DFC251A00BBEF85 /* UIView+RoundCorner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +23,14 @@
 		02E2A67F1D66C5C0006A3B9B /* RoundCornerProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundCornerProgressView.h; sourceTree = "<group>"; };
 		02E2A6811D66C5C0006A3B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02E2A6891D66F625006A3B9B /* RoundCornerProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCornerProgressView.swift; sourceTree = "<group>"; };
+		CBF0EA711DFC1D6400BBEF85 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF0EA731DFC1D6400BBEF85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBF0EA751DFC1D6400BBEF85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBF0EA781DFC1D6400BBEF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBF0EA7A1DFC1D6400BBEF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBF0EA7D1DFC1D6400BBEF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBF0EA7F1DFC1D6400BBEF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF0EA841DFC251A00BBEF85 /* UIView+RoundCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RoundCorner.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBF0EA6E1DFC1D6400BBEF85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF0EA831DFC1FE700BBEF85 /* RoundCornerProgressView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				02E2A67E1D66C5C0006A3B9B /* RoundCornerProgressView */,
+				CBF0EA721DFC1D6400BBEF85 /* Example */,
 				02E2A67D1D66C5C0006A3B9B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				02E2A67C1D66C5C0006A3B9B /* RoundCornerProgressView.framework */,
+				CBF0EA711DFC1D6400BBEF85 /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +76,22 @@
 				02E2A67F1D66C5C0006A3B9B /* RoundCornerProgressView.h */,
 				02E2A6811D66C5C0006A3B9B /* Info.plist */,
 				02E2A6891D66F625006A3B9B /* RoundCornerProgressView.swift */,
+				CBF0EA841DFC251A00BBEF85 /* UIView+RoundCorner.swift */,
 			);
 			path = RoundCornerProgressView;
+			sourceTree = "<group>";
+		};
+		CBF0EA721DFC1D6400BBEF85 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				CBF0EA731DFC1D6400BBEF85 /* AppDelegate.swift */,
+				CBF0EA751DFC1D6400BBEF85 /* ViewController.swift */,
+				CBF0EA771DFC1D6400BBEF85 /* Main.storyboard */,
+				CBF0EA7A1DFC1D6400BBEF85 /* Assets.xcassets */,
+				CBF0EA7C1DFC1D6400BBEF85 /* LaunchScreen.storyboard */,
+				CBF0EA7F1DFC1D6400BBEF85 /* Info.plist */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,18 +126,40 @@
 			productReference = 02E2A67C1D66C5C0006A3B9B /* RoundCornerProgressView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		CBF0EA701DFC1D6400BBEF85 /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF0EA801DFC1D6400BBEF85 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				CBF0EA6D1DFC1D6400BBEF85 /* Sources */,
+				CBF0EA6E1DFC1D6400BBEF85 /* Frameworks */,
+				CBF0EA6F1DFC1D6400BBEF85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = Example;
+			productReference = CBF0EA711DFC1D6400BBEF85 /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		02E2A6731D66C5C0006A3B9B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Phuc Nguyen";
 				TargetAttributes = {
 					02E2A67B1D66C5C0006A3B9B = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 0810;
+					};
+					CBF0EA701DFC1D6400BBEF85 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -108,6 +169,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 02E2A6721D66C5C0006A3B9B;
 			productRefGroup = 02E2A67D1D66C5C0006A3B9B /* Products */;
@@ -115,6 +177,7 @@
 			projectRoot = "";
 			targets = (
 				02E2A67B1D66C5C0006A3B9B /* RoundCornerProgressView */,
+				CBF0EA701DFC1D6400BBEF85 /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +190,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBF0EA6F1DFC1D6400BBEF85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF0EA7E1DFC1D6400BBEF85 /* LaunchScreen.storyboard in Resources */,
+				CBF0EA7B1DFC1D6400BBEF85 /* Assets.xcassets in Resources */,
+				CBF0EA791DFC1D6400BBEF85 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -134,11 +207,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF0EA851DFC251A00BBEF85 /* UIView+RoundCorner.swift in Sources */,
 				02E2A68A1D66F625006A3B9B /* RoundCornerProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBF0EA6D1DFC1D6400BBEF85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF0EA761DFC1D6400BBEF85 /* ViewController.swift in Sources */,
+				CBF0EA741DFC1D6400BBEF85 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBF0EA771DFC1D6400BBEF85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBF0EA781DFC1D6400BBEF85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBF0EA7C1DFC1D6400BBEF85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBF0EA7D1DFC1D6400BBEF85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		02E2A6821D66C5C0006A3B9B /* Debug */ = {
@@ -248,6 +350,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RoundCornerProgressView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pn.RoundCornerProgressView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -268,10 +371,42 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RoundCornerProgressView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pn.RoundCornerProgressView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CBF0EA811DFC1D6400BBEF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcquyen.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CBF0EA821DFC1D6400BBEF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lcquyen.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -296,6 +431,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CBF0EA801DFC1D6400BBEF85 /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF0EA811DFC1D6400BBEF85 /* Debug */,
+				CBF0EA821DFC1D6400BBEF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
